@@ -218,12 +218,12 @@ export default () => {
         <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-100">
           <div class="bg-white rounded-md shadow-md p-6">
             <div class="flex items-center justify-between">
-              <h3 class="text-lg font-medium">Coming soon</h3>
+              <h3 class="text-lg font-medium">敬请期待</h3>
               <button onClick={() => setShowComingSoon(false)}>
                 <IconX />
               </button>
             </div>
-            <p class="text-gray-500 mt-2">Chat with picture is coming soon!</p>
+            <p class="text-gray-500 mt-2">即将支持带有图片的对话！</p>
           </div>
         </div>
       </Show>
@@ -249,8 +249,8 @@ export default () => {
         when={!loading()}
         fallback={() => (
           <div class="gen-cb-wrapper">
-            <span>AI is thinking...</span>
-            <div class="gen-cb-stop" onClick={stopStreamFetch}>Stop</div>
+            <span>AI正在思考中...</span>
+            <div class="gen-cb-stop" onClick={stopStreamFetch}>停止生成</div>
           </div>
         )}
       >
@@ -261,7 +261,7 @@ export default () => {
           <textarea
             ref={inputRef!}
             onKeyDown={handleKeydown}
-            placeholder="Enter something..."
+            placeholder="输入点什么吧..."
             autocomplete="off"
             autofocus
             onInput={() => {
