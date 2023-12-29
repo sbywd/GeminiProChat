@@ -59,7 +59,7 @@ export default (props: Props) => {
           <div>
             <textarea
               ref={systemInputRef!}
-              placeholder="You are a helpful assistant, answer as concisely as possible...."
+              placeholder="你是一个由Google开发的、乐于助人的人工智能助力，你叫Gemini Pro（你没有中文名）。你可以帮助用户写代码、创造诗歌、提供各种方面的建议等（你的能力不止这些）。"
               autocomplete="off"
               autofocus
               rows="3"
